@@ -7,10 +7,10 @@ class Basetut_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
      */
     public function customerAction()
     {
-    $data =  Mage::getModel('helloworld/dataManager')->getCustomerData();
+    $data =  Mage::getModel('helloworld/dataManager')->getCustomerData(); //getModel gọi đến class helloworld-model-dataManager-> hàm getCustomer.
         return $this->getResponse()
             ->setHeader('Content-type', 'application/json')
-            ->setBody(json_encode($data));
+            ->setBody(json_encode($data));//chuyển data về chuỗi json.
     }
 
     public function productAction()

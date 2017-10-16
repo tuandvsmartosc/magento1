@@ -30,7 +30,7 @@ class Basetut_Helloworld_Model_DataManager extends Mage_Catalog_Model_Abstract{
     }
     public function getActivePaymentMethods()
     {
-        $payments = Mage::getSingleton('payment/config')->getActiveMethods();
+        $payments = Mage::getSingleton('payment/config')->getActiveMethods(); // chưa hiểu getsingleton là gì?
 
         $methods = array(array('value'=>'', 'label'=>Mage::helper('adminhtml')->__('--Please Select--')));
 
@@ -49,7 +49,7 @@ class Basetut_Helloworld_Model_DataManager extends Mage_Catalog_Model_Abstract{
 
     public function getShippingOptionArray($isMultiSelect = false)
     {
-        $methods = Mage::getSingleton('shipping/config')->getActiveCarriers();
+        $methods = Mage::getSingleton('shipping/config')->getActiveCarriers(); // chưa hiểu getsingleton là gì.
 
         $options = array();
 
