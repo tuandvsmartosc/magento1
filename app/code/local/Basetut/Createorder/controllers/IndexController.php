@@ -10,9 +10,10 @@ class Basetut_Createorder_IndexController extends Mage_Core_Controller_Front_Act
      * index action
      */
     public function indexAction() {
+
         /** @var Mage_Adminhtml_Model_Sales_Order_Create $create */
         //$create = $this->_getOrderCreateModel();
-
+//kkk
         /**
          * @var Mage_Sales_Model_Quote
          */
